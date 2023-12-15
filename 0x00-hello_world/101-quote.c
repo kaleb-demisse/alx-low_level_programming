@@ -9,10 +9,10 @@
 
 int main(void)
 {
-	char* str;
+	char *str;
 	int len;
 
-	str = "and that piece of art is useful\" - Dora Korpar, 2015-10-19,\n";
+	str = "and that piece of art is useful\" - Dora Korpar, 2015-10-19,";
 	len = strlen(str);
 	write(1, str, len);
 
