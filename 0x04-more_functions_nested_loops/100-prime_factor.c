@@ -15,7 +15,10 @@ int main(void)
 
 	for (i = 2; i <= sqrt(number); ++i)
 		if (number % i == 0)
+		{
 			number /= i;
+			--i;
+		}
 	printf("%ld\n", number);
 	return (0);
 }
