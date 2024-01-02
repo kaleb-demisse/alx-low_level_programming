@@ -10,17 +10,25 @@
 void rev_string(char *s)
 {
 	int count = 0;
+	char *temp;
+	int count2;
 
 	while (*s != '\0')
 	{
+		*temp = *s;
 		s++;
+		temp++;
 		count++;
 	}
-	while (count != -1)
-	{
-		_putchar(*s);
+	count2 = count;
+	while (count-- != 0)
 		s--;
-		count--;
+	temp--;
+	while (count2-- != 0)
+	{
+		*s = *temp;
+		s++;
+		temp--;
 	}
-	_putchar('\n');
+	*s = *temp;
 }
