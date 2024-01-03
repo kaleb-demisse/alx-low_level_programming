@@ -22,7 +22,7 @@ void puts_half(char *str)
 		str--;
 		count2--;
 	}
-	temp = (count % 2) ? (count - 1) / 2 : count / 2;
+	temp = (count % 2) ? (count + 1) / 2 : count / 2;
 	while (count2 <= count)
 	{
 		if (count2 >= temp)
